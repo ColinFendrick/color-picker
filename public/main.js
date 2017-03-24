@@ -72,6 +72,7 @@ const main = () => {
   alphaValueLabel.addEventListener('mouseleave', (event) => {
     alphaValueLabel.textContent = 'Alpha'
   })
+
   const updateColor = () => {
     for (let i = 0; i < darkSquare.length; i++) {
       darkSquare[i].style.backgroundColor = `hsla(${hueBackground}, ${satBackground}%, ${lightBackground}%, ${alphaBackground})`
@@ -86,7 +87,7 @@ const main = () => {
   let updateValues = () => {
     if (alphaBackground === 1) {
       hsla.textContent = `hsl`
-      valueList.textContent = `(${hueBackground}, ${satBackground}%,${lightBackground}%)`
+      valueList.textContent = `(${hueBackground}, ${satBackground}%, ${lightBackground}%)`
     } else {
       hsla.textContent = `hsla`
       valueList.textContent = `(${hueBackground}, ${satBackground}%, ${lightBackground}%, ${alphaBackground})`
