@@ -4,5 +4,103 @@ html {
 
 body {
   margin: 0;
-  font: 16px / 1 sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  font-family: 'Verdana', sans-serif;
+  position: absolute;
+  top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cfd9e1;
+  background: radial-gradient(#cfd9e1, #edf4f7);
+  border-radius: 13px;
+  padding: 10px;
+  border: 3px #666 solid;
+}
+
+
+
+.title {
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 0 10px;
+  margin: 0 5px 9px 5px;
+  color: #303030;
+
+}
+
+.swatch {
+  height: 125px;
+  width: 125px;
+  border-radius: 5px;
+  border: 5px solid grey;
+  margin-bottom: 33px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swatch div {
+  height: 25px;
+  width: 25px;
+}
+
+.darkSquare {
+  background-color: black;
+}
+
+.lightSquare {
+  background-color: white;
+}
+
+.container input {
+  width: 300px;
+}
+
+.hueValueLabel,
+.satValueLabel,
+.lightValueLabel,
+.alphaValueLabel {
+  padding: 5px;
+}
+
+.preview {
+  padding: 5px;
+  background-color: blue;
+  width: 88px;
+}
+
+.previewHue {
+  background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(180, 100%, 50%), hsl(0, 100%, 50%));
+}
+
+.previewSat {
+  background: linear-gradient(to right, hsl(0, 0%, 50%), hsl(0, 100%, 50%));
+}
+.previewLight {
+  background: linear-gradient(to right, hsl(0, 0%, 0%), hsl(0, 0%, 100%));
+}
+.previewAlpha {
+  background: linear-gradient(to right, hsla(0, 100%, 50%, 0), hsla(0, 100%, 50%, 1))
+}
+
+#current {
+  margin-bottom: 10px;
+  background-color: #6d7073;
+  color: #e4e4e4;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+
+.label {
+  margin-top: 10px;
+  padding: 2px;
+  color: #6c6c6c;
+  display: flex;
+  justify-content: space-between;
 }
