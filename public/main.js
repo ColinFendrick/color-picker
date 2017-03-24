@@ -79,9 +79,9 @@ const main = () => {
     for (var j = 0; j < lightSquare.length; j++) {
       lightSquare[j].style.backgroundColor = `hsla(${hueBackground}, ${satBackground}%, ${lightBackground}%, ${alphaBackground + 0.3})`
     }
-    previewSat.style.background = `linear-gradient(to right, hsl(${hueBackground}, 0%, 50%), hsl(${hueBackground}, 100%, 50%))`
-    previewLight.style.background = `linear-gradient(to right, hsl(${hueBackground}, 0%, 0%), hsl(${hueBackground}, 0%, 100%))`
-    previewAlpha.style.background =`linear-gradient(to right, hsla(${hueBackground}, 100%, 50%, 0), hsla(${hueBackground}, 100%, 50%, 1))`
+    previewSat.style.background = `linear-gradient(to right, hsl(${hueBackground}, 0%, ${lightBackground}%), hsl(${hueBackground}, 100%, ${lightBackground}%))`
+    previewLight.style.background = `linear-gradient(to right, hsl(${hueBackground}, ${satBackground}%, 0%), hsl(${hueBackground}, ${satBackground}%, 50%), hsl(${hueBackground}, ${satBackground}%, 100%))`
+    previewAlpha.style.background = `linear-gradient(to right, hsla(${hueBackground}, ${satBackground}%, ${lightBackground}%, 0), hsla(${hueBackground}, ${satBackground}%, ${lightBackground}%, 1))`
   }
   let updateValues = () => {
     if (alphaBackground === 1) {
