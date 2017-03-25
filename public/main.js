@@ -1,5 +1,4 @@
 const main = () => {
-  const stylesheet = document.styleSheets[0]
   const darkSquare = document.querySelectorAll('div.darkSquare')
   const lightSquare = document.querySelectorAll('div.lightSquare')
   const hueSlider = document.querySelector('input[name=hue]')
