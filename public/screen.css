@@ -16,22 +16,18 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: #cfd9e1;
   background: radial-gradient(#cfd9e1, #edf4f7);
   border-radius: 13px;
   padding: 10px;
   border: 3px #666 solid;
 }
 
-
-
 .title {
   font-size: 1.7em;
   font-weight: bold;
   padding: 0 10px;
-  margin: 0 5px 9px 5px;
+  margin: 0 5px 9px;
   color: #303030;
-
 }
 
 .swatch {
@@ -81,11 +77,13 @@ body {
 .previewSat {
   background: linear-gradient(to right, hsl(0, 0%, 50%), hsl(0, 100%, 50%));
 }
+
 .previewLight {
   background: linear-gradient(to right, hsl(0, 0%, 0%), hsl(0, 0%, 100%));
 }
+
 .previewAlpha {
-  background: linear-gradient(to right, hsla(0, 100%, 50%, 0), hsla(0, 100%, 50%, 1))
+  background: linear-gradient(to right, hsla(0, 100%, 50%, 0), hsla(0, 100%, 50%, 1));
 }
 
 #current {
